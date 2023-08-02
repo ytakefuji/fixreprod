@@ -16,7 +16,8 @@ $ grep import cartpole_reinforce.py >test.py
 
 <pre>
 Run fixrepdod and enter "test.py" for checking.
-fixreprod will show the all seeds to be fixed to eliminate reproducibility problems from your code.
+fixreprod will show the all seeds to be fixed to eliminate 
+reproducibility problems from your code. 14 seeds are shown in this example.
   
 $ fixreprod
 Enter the source code file name: test.py
