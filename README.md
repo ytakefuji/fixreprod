@@ -1,7 +1,7 @@
 # fixreprod
 This is under review.
 
-fixreprod is able to show all seeds which are needed to be fixed in AI systems.
+fixreprod is able to discover and show all seeds which are needed to be fixed in AI systems.
 
 To run fixreprod, install it by the following commanad. ($) indicates the prompt from the system in the terminal.
 
