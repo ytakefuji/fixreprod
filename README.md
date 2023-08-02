@@ -1,7 +1,7 @@
 # fixreprod
 This is under review.
 
-fixreprod can be used to solve reproducibility problems in pseudorandom numbers by fixing all seeds used in libraries of AI systems.
+fixreprod is an indispensable tool to solve reproducibility problems in pseudorandom numbers by fixing all seeds used in libraries of AI systems.
 
 To run fixreprod, install it by the following commanad. ($) indicates the prompt from the system in the terminal.
 
