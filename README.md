@@ -14,6 +14,9 @@ test.py contains imported libraries which will be checked by fixreprod.
 
 $ grep import cartpole_reinforce.py >test.py
 
+Before running fixreprod, you must install all libraries used in the source code.
+In cartpole_reinforce.py, gym, random, numpy, and torch must be installed.
+
 <pre>
 Run fixrepdod and enter "test.py" for checking.
 fixreprod will show the all seeds to be fixed to eliminate 
