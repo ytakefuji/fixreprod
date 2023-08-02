@@ -20,7 +20,8 @@ In cartpole_reinforce.py, gym, random, numpy, and torch must be installed.
 <pre>
 Run fixrepdod and enter "test.py" for checking.
 fixreprod will show the all seeds to be fixed to eliminate 
-reproducibility problems from your code. 14 seeds are shown in this example.
+reproducibility problems from your code. 
+14 seeds are shown in this example.
   
 $ fixreprod
 Enter the source code file name: test.py
