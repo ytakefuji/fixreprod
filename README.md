@@ -27,19 +27,15 @@ reproducibility problems from your code.
   
 $ fixreprod
 Enter the source code file name: test.py
-gymnasium.Space.seed(13123)
-gym.Space.seed(80245)
-random.Random.seed(82744)
-random.SystemRandom.seed(40572)      
-random._inst.seed(53626)
-numpy.random.seed(71207)
-torch.Generator.seed(61874)
-torch.default_generator.seed(65692)  
-torch.random.seed(57377)
-torch.cuda.seed(78878)
-torch.torch.seed(70766)
-torch.ops.seed(4417)
-torch.classes.seed(88108)
-torch.nn.functional.torch.seed(35587)
+env.action_space.seed(0)
+env.reset(seed=0)
+np.random.seed(0)
+random.Random().seed(0)
+random.seed(0)
+torch.Generator().manual_seed(0)        
+torch.cuda.manual_seed(0)
+torch.cuda.manual_seed_all(0)
+torch.manual_seed(0)
+torch.use_deterministic_algorithms(True)
 
 </pre>
