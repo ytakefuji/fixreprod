@@ -1,7 +1,7 @@
 # fixreprod
 This is under review.
 
-It is still under improvement.
+It is still undergoing improvement.
 
 fixreprod is an indispensable tool to solve reproducibility problems in pseudorandom numbers by fixing all seeds used in libraries of AI systems.
 
