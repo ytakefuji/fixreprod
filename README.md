@@ -11,13 +11,13 @@ $ pip install fixreprod
 
 # How to run fixreprod
 
-For example, assume cartpole_reinforce.py is a source code. Use grep command to generate test.py.
+For example, assume reinforcement_q_learning.py is a source code. Use grep command to generate test.py.
 test.py contains imported libraries which will be checked by fixreprod.
 
 $ grep import cartpole_reinforce.py >test.py
 
 Before running fixreprod, you must install all libraries used in the source code.
-In cartpole_reinforce.py, gym, random, numpy, and torch must be installed.
+In reinforcement_q_learning.py, gym, random, numpy, and torch must be installed.
 
 <pre>
 Run fixrepdod and enter "test.py" for checking.
