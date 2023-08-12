@@ -14,10 +14,12 @@ $ pip install fixreprod
 For example, assume reinforcement_q_learning.py is a source code. Use grep command to generate test.py.
 test.py contains imported libraries which will be checked by fixreprod. The sed command sed '/^"""/,/^"""/d' removes comment lines from reinforcement_q_learning.py and saves it in reinfo.py. The first grep command removes comment lines with the first character of "#" from reinfo.py and save it in rein.py. The second grep command extracts imported libraries from rein.py and save it in test.py.
 
+$ grep import reinforcement_q_learning.py >test.py
+
+or To see the code only, run the following commands
+
 $ sed '/^"""/,/^"""/d' reinforcement_q_learning.py >reinfo.py
-
 $ grep -v '^#' reinfo.py >rein.py
-
 $ grep import rein.py >test.py
 
 Before running fixreprod, you must install all libraries used in the source code.
