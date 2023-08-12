@@ -46,4 +46,4 @@ torch.use_deterministic_algorithms(True)
 </pre>
 These generated codes should be inserted in the rein.py. The result is shown in the following.
 
-<img src='result.png' width=540 hight=480>
+<img src='https://github.com/ytakefuji/fixreprod/raw/main/result.png' width=540 hight=480>
