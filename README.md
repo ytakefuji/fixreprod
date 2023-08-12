@@ -12,9 +12,13 @@ $ pip install fixreprod
 # How to run fixreprod
 
 For example, assume reinforcement_q_learning.py is a source code. Use grep command to generate test.py.
-test.py contains imported libraries which will be checked by fixreprod.
+test.py contains imported libraries which will be checked by fixreprod. The sed command sed '/^"""/,/^"""/d' removes comment lines from reinforcement_q_learning.py and saves it in reinfo.py. The first grep command removes comment lines with the first character of "#" from reinfo.py and save it in rein.py. The second grep command extracts imported libraries from rein.py and save it in test.py.
 
-$ grep import cartpole_reinforce.py >test.py
+$ sed '/^"""/,/^"""/d' reinforcement_q_learning.py >reinfo.py
+
+$ grep -v '^#' reinfo.py >rein.py
+
+$ grep import rein.py >test.py
 
 Before running fixreprod, you must install all libraries used in the source code.
 In reinforcement_q_learning.py, gym, random, numpy, and torch must be installed.
@@ -39,3 +43,6 @@ torch.manual_seed(0)
 torch.use_deterministic_algorithms(True)
 
 </pre>
+These generated codes should be inserted in the rein.py. The result is shown in the following.
+
+<img src='result.png' width=540 hight=480>
