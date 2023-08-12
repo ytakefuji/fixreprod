@@ -4,6 +4,7 @@ This is under review.
 It is still undergoing improvement.
 
 fixreprod is an indispensable tool to solve reproducibility problems in pseudorandom numbers by fixing all seeds and deterministic algorithms used in libraries of AI systems.
+The current version can take care of torch, tensorflow, gym and gymnasium with numpy, random and scipy. The program is expandable.
 
 To run fixreprod, install it by the following command. ($) indicates the prompt from the system in the terminal.
 
