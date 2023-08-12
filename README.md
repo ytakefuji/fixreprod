@@ -19,7 +19,9 @@ $ grep import reinforcement_q_learning.py >test.py
 or To see the code only, run the following commands
 
 $ sed '/^"""/,/^"""/d' reinforcement_q_learning.py >reinfo.py
+
 $ grep -v '^#' reinfo.py >rein.py
+
 $ grep import rein.py >test.py
 
 Before running fixreprod, you must install all libraries used in the source code.
